@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MyApplication" parent="Theme.Material3.Dark.NoActionBar">
+
+        <item name="colorPrimary">@color/ts_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/ts_purple_container</item>
+        <item name="colorOnPrimaryContainer">@color/ts_purple_bright</item>
+
+        <item name="colorSecondary">@color/ts_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">#1E1B4B</item>
+        <item name="colorOnSecondaryContainer">@color/ts_blue_bright</item>
+
+        <item name="colorTertiary">@color/ts_gold</item>
+        <item name="colorOnTertiary">@color/black</item>
+        <item name="colorTertiaryContainer">@color/ts_gold_dim</item>
+        <item name="colorOnTertiaryContainer">@color/ts_text</item>
+
+        <item name="android:colorBackground">@color/ts_bg</item>
+        <item name="colorOnBackground">@color/ts_text</item>
+        <item name="colorSurface">@color/ts_surface</item>
+        <item name="colorOnSurface">@color/ts_text</item>
+        <item name="colorSurfaceVariant">@color/ts_card</item>
+        <item name="colorOnSurfaceVariant">@color/ts_text_dim</item>
+
+        <item name="colorError">@color/ts_red</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorErrorContainer">@color/ts_red_dim</item>
+        <item name="colorOnErrorContainer">@color/ts_red</item>
+
+        <item name="android:windowBackground">@color/ts_bg</item>
+        <item name="android:statusBarColor">@color/ts_bg</item>
+        <item name="android:navigationBarColor">@color/ts_surface</item>
+
+        <item name="android:fontFamily">sans-serif</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.Large</item>
+
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigation</item>
+        <item name="materialCardViewStyle">@style/Widget.App.Card</item>
+    </style>
+
+    <style name="Theme.MyApplication.Splash" parent="Theme.MyApplication">
+        <item name="android:windowBackground">@color/ts_bg</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ShapeAppearance.App.Small" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="ShapeAppearance.App.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="ShapeAppearance.App.Large" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

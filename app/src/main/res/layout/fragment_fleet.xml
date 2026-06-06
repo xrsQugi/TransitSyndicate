@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ts_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/section_header_padding_h"
+        android:paddingVertical="@dimen/section_header_padding_v"
+        android:background="@drawable/bg_section_header">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🚗  Fleet"
+            style="@style/TextAppearance.App.SectionTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Long-press for price"
+            android:textSize="10sp"
+            android:textColor="@color/ts_text_muted" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_buy_panel"
+        android:paddingVertical="@dimen/panel_padding_v"
+        android:scrollbars="none"
+        android:fadeScrollbars="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/panel_padding_h"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_buy_scooter"
+                android:layout_width="@dimen/btn_chip_width"
+                android:layout_height="@dimen/btn_chip_height"
+                android:text="@string/btn_buy_scooter"
+                android:layout_marginEnd="@dimen/spacing_sm"
+                style="@style/Widget.App.Button.Chip"
+                app:backgroundTint="@color/ts_card_elevated" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_buy_largus"
+                android:layout_width="@dimen/btn_chip_width"
+                android:layout_height="@dimen/btn_chip_height"
+                android:text="@string/btn_buy_largus"
+                android:layout_marginEnd="@dimen/spacing_sm"
+                style="@style/Widget.App.Button.Chip"
+                app:backgroundTint="@color/ts_card_elevated" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_buy_gazel"
+                android:layout_width="@dimen/btn_chip_width"
+                android:layout_height="@dimen/btn_chip_height"
+                android:text="@string/btn_buy_gazel"
+                android:layout_marginEnd="@dimen/spacing_sm"
+                style="@style/Widget.App.Button.Chip"
+                app:backgroundTint="@color/ts_card_elevated" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_buy_semi"
+                android:layout_width="@dimen/btn_chip_width"
+                android:layout_height="@dimen/btn_chip_height"
+                android:text="@string/btn_buy_semi"
+                android:layout_marginEnd="@dimen/spacing_sm"
+                style="@style/Widget.App.Button.Chip"
+                app:backgroundTint="@color/ts_card_elevated" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_buy_refrigerator"
+                android:layout_width="@dimen/btn_chip_width"
+                android:layout_height="@dimen/btn_chip_height"
+                android:text="@string/btn_buy_refrigerator"
+                android:layout_marginEnd="@dimen/spacing_sm"
+                style="@style/Widget.App.Button.Chip"
+                app:backgroundTint="@color/ts_card_elevated" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_buy_tanker"
+                android:layout_width="@dimen/btn_chip_width"
+                android:layout_height="@dimen/btn_chip_height"
+                android:text="@string/btn_buy_tanker"
+                style="@style/Widget.App.Button.Chip"
+                app:backgroundTint="@color/ts_card_elevated" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_empty_fleet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/empty_fleet"
+        android:visibility="gone"
+        style="@style/TextAppearance.App.EmptyState" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_fleet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/spacing_sm"
+        android:paddingBottom="@dimen/spacing_sm"
+        android:clipToPadding="false" />
+
+</LinearLayout>

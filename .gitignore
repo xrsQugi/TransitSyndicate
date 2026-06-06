@@ -20,4 +20,3 @@ gradle/
 .idea/
 app/.gitignore
 app/proguard-rules.pro
-app/src/main/res/

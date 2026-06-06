@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Transit Syndicate</string>
+
+    <string name="transport_walking_courier">Walking Courier</string>
+    <string name="transport_scooter">Electric Scooter</string>
+    <string name="transport_largus">Largus Wagon</string>
+    <string name="transport_gazel">Gazel Truck</string>
+    <string name="transport_semi_trailer">Semi-Trailer Truck</string>
+    <string name="transport_refrigerator">Refrigerator Truck</string>
+    <string name="transport_tanker">Fuel Tanker</string>
+
+    <string name="btn_buy_scooter">🛵 Scooter\n$500</string>
+    <string name="btn_buy_largus">🚐 Largus\n$5,000</string>
+    <string name="btn_buy_gazel">🚛 Gazel\n$15,000</string>
+    <string name="btn_buy_semi">🚚 Semi\n$80,000</string>
+    <string name="btn_buy_refrigerator">❄️ Fridge\n$35,000</string>
+    <string name="btn_buy_tanker">⛽ Tanker\n$40,000</string>
+
+    <string name="btn_hire_courier">🧍 Courier\n$100/hire</string>
+    <string name="btn_hire_driver">🧑‍✈️ Driver\n$400/hire</string>
+    <string name="btn_hire_loader">💪 Loader\n$200/hire</string>
+    <string name="btn_hire_dispatcher">📋 Dispatch\n$600/hire</string>
+
+    <string name="btn_build_garage">🏚 Garage\n$2,000</string>
+    <string name="btn_build_sorting">📦 Sorting\n$10,000</string>
+    <string name="btn_build_gas">⛽ Gas Stn\n$25,000</string>
+    <string name="btn_build_farm">🌾 Farm\n$50,000</string>
+    <string name="btn_build_mill">⚙️ Mill\n$30,000</string>
+    <string name="btn_build_bakery">🍞 Bakery\n$40,000</string>
+    <string name="btn_build_oil_depot">🛢️ Oil Depot\n$60,000</string>
+    <string name="btn_build_cold_storage">❄️ Cold Stor.\n$45,000</string>
+
+    <string name="transport_walking_courier_desc">1 cargo slot. Zero costs. Low speed.</string>
+    <string name="transport_scooter_desc">2 cargo slots. Fast in traffic. Requires charging.</string>
+    <string name="transport_largus_desc">10 cargo slots. Carry multiple orders at once. Requires fuel.</string>
+    <string name="transport_gazel_desc">Carries heavy cargo that won\'t fit in a car.</string>
+    <string name="transport_semi_trailer_desc">For intercity routes. Very high capacity.</string>
+    <string name="transport_refrigerator_desc">Keeps perishable goods fresh during transport.</string>
+    <string name="transport_tanker_desc">Transports fuel across the city.</string>
+
+    <string name="transport_state_idle">● Idle</string>
+    <string name="transport_state_delivering">▶ Delivering</string>
+    <string name="transport_state_broken">✕ Broken</string>
+    <string name="transport_state_refueling">⛽ Refueling</string>
+    <string name="transport_state_loading">⏳ Loading</string>
+
+    <string name="cargo_food">🍕 Food</string>
+    <string name="cargo_documents">📄 Documents</string>
+    <string name="cargo_heavy">⚙️ Heavy Cargo</string>
+    <string name="cargo_perishable">❄️ Perishable</string>
+    <string name="cargo_fuel">⛽ Fuel</string>
+    <string name="cargo_grain">🌾 Grain</string>
+    <string name="cargo_flour">🌾 Flour</string>
+    <string name="cargo_bread">🍞 Bread</string>
+
+    <string name="district_residential">🏘 Residential</string>
+    <string name="district_business">🏢 Business</string>
+    <string name="district_industrial">🏭 Industrial</string>
+    <string name="district_global">🌍 Global</string>
+
+    <string name="district_residential_desc">Short distances, narrow alleys. Cheap food delivery orders.</string>
+    <string name="district_business_desc">Expensive document deliveries. High traffic — use bicycle couriers.</string>
+    <string name="district_industrial_desc">Factories and warehouses. Freight transport only.</string>
+    <string name="district_global_desc">Highway to neighboring city. Driver fatigue mechanic active.</string>
+    <string name="district_unlock_level">Unlocks at Level %d</string>
+    <string name="district_locked">🔒 Locked — Reach Level %d</string>
+
+    <string name="building_garage">🏚 Garage</string>
+    <string name="building_sorting_center">📦 Sorting Center</string>
+    <string name="building_gas_station">⛽ Gas Station</string>
+    <string name="building_farm">🌾 Farm</string>
+    <string name="building_mill">⚙️ Mill</string>
+    <string name="building_bakery">🍞 Bakery</string>
+    <string name="building_oil_depot">🛢️ Oil Depot</string>
+    <string name="building_cold_storage">❄️ Cold Storage</string>
+
+    <string name="building_garage_desc">More vehicle slots per level</string>
+    <string name="building_sorting_center_desc">Bundles small parcels for truck pickup</string>
+    <string name="building_gas_station_desc">Refuel and repair at cost price</string>
+    <string name="building_farm_desc">Produces grain for your supply chain</string>
+    <string name="building_mill_desc">Grinds grain into flour for the bakery</string>
+    <string name="building_bakery_desc">Converts flour into bread for stores</string>
+    <string name="building_oil_depot_desc">Extracts and stores fuel for tanker deliveries</string>
+    <string name="building_cold_storage_desc">Stores perishable goods for refrigerated transport</string>
+
+    <string name="staff_novice_courier">Novice Courier</string>
+    <string name="staff_experienced_driver">Experienced Driver</string>
+    <string name="staff_loader">Loader</string>
+    <string name="staff_dispatcher">Dispatcher</string>
+
+    <string name="staff_novice_courier_desc">Cheap, but may deliver slowly.</string>
+    <string name="staff_experienced_driver_desc">Drives fast and without accidents.</string>
+    <string name="staff_loader_desc">Loads trucks in 2 ticks instead of 10.</string>
+    <string name="staff_dispatcher_desc">Auto-assigns orders to drivers in a zone.</string>
+
+    <string name="skill_stamina">Stamina</string>
+    <string name="skill_run_speed">Running Speed</string>
+    <string name="skill_negotiation">Negotiation</string>
+
+    <string name="order_status_pending">⏳ Pending</string>
+    <string name="order_status_assigned">✓ Assigned</string>
+    <string name="order_status_in_progress">▶ Delivering</string>
+    <string name="order_status_completed">✅ Done</string>
+    <string name="order_status_failed">❌ Failed</string>
+    <string name="order_deadline_ticks">⏱ %d ticks left</string>
+    <string name="order_deadline_urgent">🔴 %d ticks left</string>
+
+    <string name="label_money">Money</string>
+    <string name="label_level">Level</string>
+    <string name="label_experience">Experience</string>
+    <string name="label_fleet">Fleet</string>
+    <string name="label_orders">Orders</string>
+    <string name="label_staff">Staff</string>
+    <string name="label_buildings">Buildings</string>
+    <string name="label_map">Map</string>
+    <string name="label_buy">Buy</string>
+    <string name="label_hire">Hire</string>
+    <string name="label_fire">Fire</string>
+    <string name="label_upgrade">Upgrade ↑</string>
+    <string name="label_repair">Repair</string>
+    <string name="label_assign">Assign Courier</string>
+    <string name="label_price">Price</string>
+    <string name="label_salary">Salary / week</string>
+    <string name="label_reward">Reward</string>
+    <string name="label_slots">Slots</string>
+    <string name="label_speed">Speed</string>
+    <string name="label_deadline">Deadline</string>
+    <string name="label_from">From</string>
+    <string name="label_to">To</string>
+    <string name="label_skill_points">Skill Points</string>
+    <string name="label_supply_chain">Supply Chain</string>
+    <string name="label_unlock">Unlock</string>
+    <string name="label_locked">Locked</string>
+    <string name="label_max_level">MAX LEVEL</string>
+    <string name="label_capacity">Capacity</string>
+    <string name="label_discount">Discount</string>
+    <string name="label_reliability">Reliability</string>
+    <string name="label_fatigue">Fatigue</string>
+    <string name="label_available">✅ Available</string>
+    <string name="label_busy">⏳ On route</string>
+    <string name="label_level_badge" formatted="false">Lv.%d / %d</string>
+
+    <string name="empty_orders">No active orders yet.\nThey appear every 15 seconds.\nHire a courier to start delivering!</string>
+    <string name="empty_fleet">No vehicles yet.\nYour Walking Courier is your first transport.\nBuy a Scooter for $500 to speed things up!</string>
+    <string name="empty_staff">No staff hired yet.\nHire a Novice Courier for $100\nto start accepting delivery orders.</string>
+    <string name="empty_buildings">No buildings constructed yet.\nSave up $2,000 and build a Garage\nto increase your vehicle capacity.</string>
+
+    <string name="error_not_enough_money">Not enough money!</string>
+    <string name="error_no_available_transport">No available transport or staff!</string>
+    <string name="error_cargo_incompatible">This transport cannot carry this cargo type.</string>
+    <string name="error_district_locked">Locked. Reach level %d to unlock.</string>
+    <string name="error_already_max_level">Already at maximum level!</string>
+    <string name="error_no_skill_points">No skill points available.</string>
+
+    <string name="msg_order_completed">✅ Order done! +%s</string>
+    <string name="msg_order_failed">❌ Order failed — deadline missed.</string>
+    <string name="msg_level_up">🎉 Level Up! You are now Level %d</string>
+    <string name="msg_district_unlocked">🗺️ %s unlocked!</string>
+    <string name="msg_transport_purchased">%s purchased!</string>
+    <string name="msg_building_constructed">%s constructed!</string>
+    <string name="msg_transport_broken">%s broke down!</string>
+    <string name="msg_dispatcher_hired">Dispatcher hired. Orders will now be auto-assigned.</string>
+
+    <string name="onboarding_title">🚚 Welcome to Transit Syndicate!</string>
+    <string name="onboarding_body">Build your courier empire from nothing.\n\n📦 Orders appear every 15 seconds\n👤 Hire a Courier in Personnel ($100)\n✅ Tap \'Assign Courier\' to dispatch\n🏗️ Build a Garage when you earn $2,000\n🗺️ Level up to unlock new districts\n\nStart with Courier #1 — your first courier!</string>
+    <string name="onboarding_btn">Let\'s Roll! 🚀</string>
+
+    <string name="auto_dispatch_label">⚡ Auto-Dispatch</string>
+    <string name="auto_dispatch_on">ON</string>
+    <string name="auto_dispatch_off">OFF</string>
+    <string name="btn_configure_cargo">Cargo Types</string>
+    <string name="dialog_cargo_title">Auto-dispatch: Cargo Types</string>
+    <string name="dialog_cargo_hint">Checked types will be auto-assigned to available staff.</string>
+
+    <string name="supply_chain_bread_route">Bread Supply Chain</string>
+    <string name="supply_chain_step_farm_to_mill">Farm to Mill (Grain)</string>
+    <string name="supply_chain_step_mill_to_bakery">Mill to Bakery (Flour)</string>
+    <string name="supply_chain_step_bakery_to_store">Bakery to Store (Bread)</string>
+</resources>
