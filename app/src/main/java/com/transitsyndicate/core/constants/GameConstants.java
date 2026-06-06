@@ -60,8 +60,15 @@ public final class GameConstants {
     public static final int GAS_STATION_MAX_LEVEL = 3;
 
     public static final int FARM_MAX_LEVEL = 5;
+    public static final long MILL_PRICE = 30_000L;
+    public static final int MILL_MAX_LEVEL = 5;
+    public static final int MILL_OUTPUT_PER_LEVEL = 2;
     public static final int BAKERY_MAX_LEVEL = 5;
     public static final int BAKERY_OUTPUT_PER_LEVEL = 3;
+    public static final long OIL_DEPOT_PRICE = 60_000L;
+    public static final int OIL_DEPOT_MAX_LEVEL = 3;
+    public static final long COLD_STORAGE_PRICE = 45_000L;
+    public static final int COLD_STORAGE_MAX_LEVEL = 3;
 
     public static final int BUSINESS_DISTRICT_UNLOCK_LEVEL = 3;
     public static final int INDUSTRIAL_ZONE_UNLOCK_LEVEL = 7;

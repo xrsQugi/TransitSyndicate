@@ -62,7 +62,13 @@ public class BuildingsFragment extends Fragment {
                 .setOnClickListener(v -> vm.buildBuilding(BuildingType.GAS_STATION));
         view.findViewById(R.id.btn_build_farm)
                 .setOnClickListener(v -> vm.buildBuilding(BuildingType.FARM));
+        view.findViewById(R.id.btn_build_mill)
+                .setOnClickListener(v -> vm.buildBuilding(BuildingType.MILL));
         view.findViewById(R.id.btn_build_bakery)
                 .setOnClickListener(v -> vm.buildBuilding(BuildingType.BAKERY));
+        view.findViewById(R.id.btn_build_oil_depot)
+                .setOnClickListener(v -> vm.buildBuilding(BuildingType.OIL_DEPOT));
+        view.findViewById(R.id.btn_build_cold_storage)
+                .setOnClickListener(v -> vm.buildBuilding(BuildingType.COLD_STORAGE));
     }
 }
