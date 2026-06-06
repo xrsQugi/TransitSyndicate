@@ -23,8 +23,13 @@ import com.transitsyndicate.domain.entity.infrastructure.BuildingType;
 import com.transitsyndicate.domain.entity.infrastructure.Garage;
 import com.transitsyndicate.domain.entity.infrastructure.GasStation;
 import com.transitsyndicate.domain.entity.infrastructure.SortingCenter;
-import com.transitsyndicate.domain.entity.infrastructure.Farm;
 import com.transitsyndicate.domain.entity.infrastructure.Bakery;
+import com.transitsyndicate.domain.entity.infrastructure.ColdStorage;
+import com.transitsyndicate.domain.entity.infrastructure.Farm;
+import com.transitsyndicate.domain.entity.infrastructure.Mill;
+import com.transitsyndicate.domain.entity.infrastructure.OilDepot;
+import com.transitsyndicate.domain.entity.transport.SpecialVehicle;
+import com.transitsyndicate.domain.entity.transport.SpecialVehicleType;
 import com.transitsyndicate.domain.entity.personnel.Dispatcher;
 import com.transitsyndicate.domain.entity.personnel.ExperiencedDriver;
 import com.transitsyndicate.domain.entity.personnel.Loader;
@@ -278,6 +283,8 @@ public class GameViewModel extends AndroidViewModel {
             case LARGUS:        t = new Largus(0); break;
             case GAZEL_TRUCK:   t = new GazelTruck(0); break;
             case SEMI_TRAILER:  t = new SemiTrailerTruck(0); break;
+            case REFRIGERATOR:  t = new SpecialVehicle(0, SpecialVehicleType.REFRIGERATOR); break;
+            case TANKER:        t = new SpecialVehicle(0, SpecialVehicleType.TANKER); break;
             default:
                 toast.setValue(getApplication().getString(R.string.error_not_enough_money));
                 return;
@@ -360,7 +367,10 @@ public class GameViewModel extends AndroidViewModel {
             case SORTING_CENTER: b = new SortingCenter(0, districtId); break;
             case GAS_STATION:    b = new GasStation(0, districtId); break;
             case FARM:           b = new Farm(0, districtId); break;
+            case MILL:           b = new Mill(0, districtId); break;
             case BAKERY:         b = new Bakery(0, districtId); break;
+            case OIL_DEPOT:      b = new OilDepot(0, districtId); break;
+            case COLD_STORAGE:   b = new ColdStorage(0, districtId); break;
             default: return;
         }
         boolean ok = c.constructBuilding.execute(b);

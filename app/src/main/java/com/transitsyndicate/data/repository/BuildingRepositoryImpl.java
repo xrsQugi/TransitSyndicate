@@ -5,9 +5,12 @@ import com.transitsyndicate.data.local.database.entity.BuildingEntity;
 import com.transitsyndicate.domain.entity.infrastructure.Bakery;
 import com.transitsyndicate.domain.entity.infrastructure.Building;
 import com.transitsyndicate.domain.entity.infrastructure.BuildingType;
+import com.transitsyndicate.domain.entity.infrastructure.ColdStorage;
 import com.transitsyndicate.domain.entity.infrastructure.Farm;
 import com.transitsyndicate.domain.entity.infrastructure.Garage;
 import com.transitsyndicate.domain.entity.infrastructure.GasStation;
+import com.transitsyndicate.domain.entity.infrastructure.Mill;
+import com.transitsyndicate.domain.entity.infrastructure.OilDepot;
 import com.transitsyndicate.domain.entity.infrastructure.SortingCenter;
 import com.transitsyndicate.domain.repository.BuildingRepository;
 
@@ -69,10 +72,13 @@ public class BuildingRepositoryImpl implements BuildingRepository {
         Building b;
         switch (type) {
             case SORTING_CENTER: b = new SortingCenter(e.id, e.districtId); break;
-            case GAS_STATION: b = new GasStation(e.id, e.districtId); break;
-            case FARM: b = new Farm(e.id, e.districtId); break;
-            case BAKERY: b = new Bakery(e.id, e.districtId); break;
-            default: b = new Garage(e.id, e.districtId); break;
+            case GAS_STATION:    b = new GasStation(e.id, e.districtId); break;
+            case FARM:           b = new Farm(e.id, e.districtId); break;
+            case MILL:           b = new Mill(e.id, e.districtId); break;
+            case BAKERY:         b = new Bakery(e.id, e.districtId); break;
+            case OIL_DEPOT:      b = new OilDepot(e.id, e.districtId); break;
+            case COLD_STORAGE:   b = new ColdStorage(e.id, e.districtId); break;
+            default:             b = new Garage(e.id, e.districtId); break;
         }
         for (int i = 1; i < e.level; i++) b.upgrade();
         return b;

@@ -78,7 +78,8 @@ public class AppContainer {
         purchaseTransport = new PurchaseTransportUseCase(playerRepository, transportRepository);
         assignTransport = new AssignTransportUseCase(transportRepository, orderRepository, staffRepository);
         repairTransport = new RepairTransportUseCase(playerRepository, transportRepository, buildingRepository);
-        generateOrder = new GenerateOrderUseCase(orderRepository, mapRepository);
+        generateOrder = new GenerateOrderUseCase(orderRepository, mapRepository,
+                transportRepository, buildingRepository);
         acceptOrder = new AcceptOrderUseCase(orderRepository);
         completeOrder = new CompleteOrderUseCase(orderRepository, playerRepository, transportRepository, staffRepository);
         createSupplyChain = new CreateSupplyChainUseCase(buildingRepository);

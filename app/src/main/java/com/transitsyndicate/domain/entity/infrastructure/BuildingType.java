@@ -5,5 +5,8 @@ public enum BuildingType {
     SORTING_CENTER,
     GAS_STATION,
     FARM,
-    BAKERY
+    MILL,
+    BAKERY,
+    OIL_DEPOT,
+    COLD_STORAGE
 }

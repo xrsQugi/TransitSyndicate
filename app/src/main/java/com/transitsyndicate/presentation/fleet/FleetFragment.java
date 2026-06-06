@@ -94,5 +94,21 @@ public class FleetFragment extends Fragment {
                     showPrice("🚚 Semi Trailer", GameConstants.SEMI_PRICE);
                     return true;
                 });
+
+        view.findViewById(R.id.btn_buy_refrigerator)
+                .setOnClickListener(v -> vm.buyTransport(TransportType.REFRIGERATOR));
+        view.findViewById(R.id.btn_buy_refrigerator)
+                .setOnLongClickListener(v -> {
+                    showPrice("❄️ Refrigerator", GameConstants.REFRIGERATOR_PRICE);
+                    return true;
+                });
+
+        view.findViewById(R.id.btn_buy_tanker)
+                .setOnClickListener(v -> vm.buyTransport(TransportType.TANKER));
+        view.findViewById(R.id.btn_buy_tanker)
+                .setOnLongClickListener(v -> {
+                    showPrice("⛽ Tanker", GameConstants.TANKER_PRICE);
+                    return true;
+                });
     }
 }
